@@ -31,8 +31,8 @@ public class BulkUploadConfig {
 	
 	public AmazonS3 getAWSAccess() {
 		
-		AWSCredentials credentials = new BasicAWSCredentials("AKIAIXUTSBOVKT45OUVQ",
-				"gxN59AN8DorV6xy6io7Oukt4EvoyOwN4WgfF3mQK");
+		AWSCredentials credentials = new BasicAWSCredentials("xyz",
+				"hhh");
 		
 		return AmazonS3ClientBuilder.standard()
 				.withCredentials(new AWSStaticCredentialsProvider(credentials)).withRegion(Regions.AP_SOUTH_1).build();
