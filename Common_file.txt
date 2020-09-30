@@ -1,0 +1,48 @@
+Hibernate: create table org_sms_template
+ (id bigint not null, created_by varchar(255), created_datetime datetime, 
+ is_enabled bit not null, request_id varchar(255) not null, updated_by varchar(255), 
+ updated_datetime datetime, version bigint not null, category varchar(255), content varchar(255), 
+ pos_id bigint, type varchar(255), primary key (id)) engine=InnoDB
+
+
+private String senderId;
+	private String content;
+	private List<String> contactNumbers;
+	private Long posId;
+	private String category;
+	private String type;
+	
+	
+	
+	GYM_PRO_WORKING_COPY
+
+C:\Work\personal\25072019_GYM\26072019 ----> bulk upload
+
+In power shell
+cd C:\Work\personal\25072019_GYM\26072019\gympro-app
+
+docker-compose up
+
+
+
+
+
+
+
+
+
+
+SELECT * FROM auth.auth_address;
+
+
+CREATE TABLE IF NOT EXISTS auth.org_bulk_upload_template 
+( ID bigint NOT NULL, POS_ID bigint, TOTAL_NUMBER_OF_RECORDS bigint, FILE_NAME varchar(255), FAILED_RECORD_COUNT bigint, STATUS varchar(255), TYPE varchar(255), REQUEST_ID varchar(255),CREATED_BY varchar(255), CREATED_DATETIME datetime,  UPDATED_DATETIME datetime, UPDATED_BY varchar(255),IS_ENABLED boolean,VERSION bigint);
+
+CREATE TABLE IF NOT EXISTS auth.org_bulk_data_temp
+( ID bigint NOT NULL, USER_NAME varchar(255), USER_AGE bigint, CAT varchar(255), LNAME varchar(255),  REQUEST_ID varchar(255),CREATED_BY varchar(255), CREATED_DATETIME datetime,  UPDATED_DATETIME datetime, UPDATED_BY varchar(255),IS_ENABLED boolean,VERSION bigint);
+
+
+drop table auth.org_bulk_upload_template;
+select * from auth.org_bulk_upload_template;
+ALTER TABLE auth.org_bulk_upload_template
+Change COLUMN customer_id pos_id bigint;

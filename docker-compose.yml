@@ -1,0 +1,12 @@
+version: '2.0'
+services:
+  db:
+    image: registry.hub.docker.com/library/mysql:5.6
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "13306:3306"
+    environment:
+      MYSQL_DATABASE: auth
+      MYSQL_USER: auth-user
+      MYSQL_PASSWORD: auth-password
+      MYSQL_ROOT_PASSWORD: root12345

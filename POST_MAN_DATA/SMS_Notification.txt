@@ -1,0 +1,52 @@
+
+create sms :
+
+{
+  "context": {
+    "clientId": "1",
+    "companyId": "1",
+    "posId": "7000",
+    "requestId": "1",
+    "userId": "anilkumar007"
+  },
+  "data": {
+  "id":7000,
+  "type":"Discount Vouchers",
+  "category":"Coupons",
+  "content":"OFFERS:Take an extra 5% of all your purchases. show code 2202YD22",
+  "posId":6000,
+  "createdBy":"anilkumar",
+  "createdDatetime":"2015-08-04T10:11:30",
+  "isEnabled":true,
+  "updatedBy":"anilkumar",
+  "updatedDatetime":"2015-08-04T10:11:30",
+  "version":1
+  },
+  "requestDateTime": "2019-05-30T01:11:35.942Z"
+}
+
+send sms :
+
+{
+  "context": {
+    "clientId": "1",
+    "companyId": "1",
+    "posId": "7000",
+    "requestId": "1",
+    "userId": "anilkumar007"
+  },
+  "data": {
+  "senderId":6666,
+  "type":"Discount Vouchers",
+  "contactNumbers": ["+919986076463","+918971317281"],
+  "category":"Coupons",
+  "content":"OFFERS:Fitness club : %50 Discount on admission : Valid From 1st July to 5th July",
+  "posId":7000,
+  "createdBy":"anilkumar",
+  "createdDatetime":"2015-08-04T10:11:30",
+  "updatedBy":"anilkumar",
+  "updatedDatetime":"2015-08-04T10:11:30",
+  "version":1
+  },
+  "requestDateTime": "2019-05-30T01:11:35.942Z"
+}

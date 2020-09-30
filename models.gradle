@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+sourceSets.main.java.srcDirs+='src/main/javaGen'
+
+task generateModels(type: JavaExec) {
+    println "hello"
+    classpath = sourceSets.main.compileClasspath
+    main = 'com.msnishan.gen.Main'
+    args project.rootDir
+    println "hell1"
+
+}
+clean {
+    delete "${project.rootDir}/src/main/javaGen"
+}
+
+compileJava.dependsOn generateModels
